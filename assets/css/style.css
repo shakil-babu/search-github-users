@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+    background-color: #eeeeee;
+}
+/* =================================== Nav area =============================== */
+.nav-area{
+    background-color: #fff;
+    box-shadow: 0 0 2.25rem #9da5ab;
+    padding: 20px 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.nav-items-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items-flex h4{
+    font-size: 25px;
+    color:orange ;
+}
+.nav-items-flex a{
+    font-size: 18px;
+    text-decoration: none;
+    color: orange;
+}
+
+
+/* ========================================== Search area ==================================== */
+.search-area{
+    margin: 30px;
+}
+.m-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.search-box{
+    width: 100%;
+}
+.search-box h4{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: orange;
+}
+.input-design{
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2.25rem #9da5ab;
+    border-radius: 30px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border:none;
+    border-radius: 30px;
+    outline: none;
+    color: rgba(5, 4, 3, 0.979);
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.btn:hover{
+    background-color: rgba(255, 166, 0, 0.822);
+}
+
+.user-head-info-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.head-info-box{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 2.25rem #9da5ab;
+}
+.head-info-box a{
+    text-decoration: none ;
+}
+.head-info-box a i{
+    font-size: 30px;
+    background: orange;
+    padding: 15px;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.head-info-box p{
+    color: #617d98;
+    font-size: 16px;
+}
+.head-info-box h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user-details-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+.user-personal-details{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 2.25rem #9da5ab;
+    text-align: center;
+    height: 380px;
+}
+
+.user-followers{
+
+    overflow-y: scroll;
+    height: 380px;
+}
+.avatar-info .img{
+    width: 120px;
+    margin:auto;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid orange;
+
+}
+.avatar-info .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.follow-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.names{
+    text-align-last: left;
+}
+.names h4{
+    font-size:16px;
+    text-transform: uppercase;
+    color: #617d98;
+}
+.avatar-info p{
+    text-align-last: left;
+    color: #9da5ab;
+}
+.follow-user a{
+    color: orange;
+    border: 1px solid orange ;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    text-transform: capitalize;;
+    cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+}
+.follow-user a:hover{
+    background-color: orange;
+    color: #fff;
+}
+.user-personal-details h4 span i{
+    background: orange;
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 25px !important;
+    margin-top: 5px;
+}
+
+.followers-info-here{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 2.25rem #9da5ab;
+}
+.followers-info-here img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid orange;
+    margin-right: 20px;
+}
+/* ======================================== Responsive Design ================================ */
+/* max-992 */
+@media screen and (max-width:992px){
+    .user-head-info-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* max-768 */
+@media screen and (max-width:768px){
+    .nav-items-flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-box h4{
+        font-size: 20px;
+    }
+    .user-head-info-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .user-details-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* max-576 */
+@media screen and (max-width:576px){
+    .input-design{
+        flex-direction: column;
+    }
+    .btn{
+        margin-top: 15px;
+    }
+    .search-box h4{
+        font-size: 15px;
+    }
+    .follow-user{
+        flex-direction: column;
+    }
+    .follow-user h4{
+       font-size: 10px;
+       text-align: left !important;
+    }
+    .follow-user a{
+        width: 100%;
+        margin-top: 8px;
+    }
+}

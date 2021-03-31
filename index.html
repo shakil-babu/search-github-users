@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Gitub User </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/img/first.png" type="image/x-icon">
+    <!-- boxicon -->
+    <link rel="stylesheet" href="./assets/boxicons/css/boxicons.min.css">
+    <!-- varela round font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav-area">
+        <div class="container nav-items-flex">
+            <h4>FindGithubUser</h4>
+            <a href="#">Home</a>
+        </div>
+    </nav>
+
+    <!-- search area -->
+    <section class="search-area">
+        <div class="container m-auto">
+            <div class="search-box">
+                <h4>Search github users</h4>
+                <div class="input-design">
+                    <input  type="text" placeholder="Search user" id="search-field"> <button id="search-btn" class="btn">Search</button>
+                </div>
+                <p style="color: red; margin:15px 0;" id="inputValidate"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- github users section -->
+    <section class="github-users">
+        <div class="container" id="showUserInfo">
+
+
+        </div>
+        <div class="container">
+            <div class="user-details-grid">
+                <div id="user-details">
+
+                </div>
+                <div id='followers-details' class="user-followers">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- scripts -->
+<script src="./assets/js/structure.js"></script>
+<script src="./assets/js/app.js"></script>
+
+</body>
+</html>
